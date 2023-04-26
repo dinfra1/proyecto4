@@ -1,0 +1,29 @@
+.App{
+    padding: 2em 1.5em;
+}
+
+.app--header{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+.Butoom--app{
+    background-color:#555A88;
+    color: white;
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+    transition: trasnform 200ms ease;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+.Butoom--app:hover{
+    transform: scale(1.05);
+    filter: brightness(1.15)
+}
+.user--container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
