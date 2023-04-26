@@ -17,7 +17,6 @@ function App() {
 
   const handleOpenForm = ()=>{
     setFormClose(false)
-    setUpdateInfo()
   }
   
   return (

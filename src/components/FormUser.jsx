@@ -25,10 +25,13 @@ const FormUser = ({postUserList, UpdateInfo, updateUser, setUpdateInfo, setFormC
         reset(dafaultDate)
     }
 
-    const handleExit = (data)=>{
+    const handleExit = ()=>{
         setFormClose(true)
         reset(dafaultDate)
-        setUpdateInfo(data)
+        setUpdateInfo()
+    }
+    const handleUser = ()=>{
+      setFormClose(true)
     }
 
   return (
@@ -58,7 +61,7 @@ const FormUser = ({postUserList, UpdateInfo, updateUser, setUpdateInfo, setFormC
         <label className="form--label" htmlFor="birthday">Birthday</label>
         <input className="form--input" {...register('birthday')} type="date" id="birthday" placeholder="" />
       </div>
-      <button onClick={handleExit} className="btn">{UpdateInfo ? 'Update' : 'Create'}</button>
+      <button onClick={handleUser} className="btn">{UpdateInfo ? 'Update' : 'Create'}</button>
     </form>
     </div>
   )
