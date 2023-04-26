@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useState } from "react"
-const url = "http://users-crud.academlo.tech/users/"
+const url = "https://users-crud.academlo.tech/users/"
 const useListCrud = () => {
 
 const [Users, setUsers] = useState()
